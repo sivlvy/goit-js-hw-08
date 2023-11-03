@@ -7,8 +7,8 @@ const list = document.querySelector('.gallery');
 
 const markup = galleryItems
   .map(
-    ({ preview, original, description }) => `
-<li class="gallery__item">
+    ({ preview, original, description }) => `	
+   <li class="gallery__item">
    <a class="gallery__link" href="${original}">
       <img
          class="gallery__image"
@@ -19,7 +19,7 @@ const markup = galleryItems
    </a>
    </li>`
   )
-  .join();
+  .join('');
 
 list.insertAdjacentHTML('beforeend', markup);
 
